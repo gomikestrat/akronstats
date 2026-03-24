@@ -16,9 +16,15 @@ const PRESET_OPTIONS: { value: TimeRange; label: string }[] = [
 export function TimeRangeSelector({ value, onChange }: TimeRangeSelectorProps) {
     const isCustom = typeof value === "object";
     const [showCustom, setShowCustom] = useState(isCustom);
-    const [customRange, setCustomRange] = useState<CustomTimeRange>(
-        isCustom ? value : { from: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().split('T')[0], to: new Date().toISOString().split('T')[0] }
-    );
+    const [customRange, setCustomRange] = useState<CustomTimeRange>(() => {
+        if (isCustom) return value;
+        const now = new Date();
+        const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+        return {
+            from: yesterday.toISOString().split('T')[0],
+            to: now.toISOString().split('T')[0]
+        };
+    });
     const containerRef = useRef<HTMLDivElement>(null);
 
     // Close custom picker if clicking outside
