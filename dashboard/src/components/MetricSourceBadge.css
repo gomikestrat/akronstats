@@ -1,0 +1,28 @@
+/* ═══════════════════════════════════════════════════
+   Metric Source Badges
+   ═══════════════════════════════════════════════════ */
+
+.metric-source-badge {
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.metric-source-badge--edge {
+    color: var(--accent-blue);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.metric-source-badge--rum {
+    color: var(--accent-teal);
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}

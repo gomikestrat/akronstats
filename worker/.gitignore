@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Local variables (secrets)
+.dev.vars
+
+# Cloudflare Wrangler
+.wrangler/
+.wrangler/dist/
+
+# Build outputs
+dist/
+
+# OS Files
+.DS_Store
+Thumbs.db
