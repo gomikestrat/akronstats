@@ -4,11 +4,13 @@
   <img src="assets/logo.png" width="800" alt="AkronStats Logo">
 </p>
 
-**Portfolio-wide Cloudflare telemetry. Zero UI tax.**
+**Simple, to-the-point analytics for your entire Cloudflare portfolio.**
+
+AkronStats is a lightweight, high-performance dashboard that leverages Cloudflare's native telemetry APIs. It gives you a single-pane-of-glass overview of your entire domain portfolio — traffic, bandwidth, and security — all on one page.
+
+No more doing "999 clicks" in the Cloudflare dash just to check on your domains. AkronStats is designed to be fast, natively secured behind Cloudflare Zero Trust, and completely "UI-tax" free.
 
 > **Akron** (ἄκρον) is the Greek word for **Edge**. 🏺
-
-AkronStats is a high-performance, lightweight analytics dashboard designed to bring your data to the edge. Stop doing "999 clicks" in the Cloudflare interface just to check on your domains. AkronStats gives you a single-pane-of-glass overview of your entire portfolio's traffic, bandwidth, and security — all on one page, and all natively secured behind Cloudflare Zero Trust.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
